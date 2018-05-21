@@ -1,0 +1,49 @@
+canvas {
+	/*border: 1px solid #000;*/
+	padding: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+input {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+}
+
+input:hover {
+	animation: rainbow 1s infinite;
+	-webkit-animation: rainbow 1s infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    -webkit-filter: hue-rotate(180deg);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
